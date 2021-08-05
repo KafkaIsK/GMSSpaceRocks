@@ -8,11 +8,21 @@ with(obj_particles) {
 global.cameraShake = 4;
 
 switch(object_index) {
-	case obj_raider: score += 15; break;
-	case obj_hunter: score += 30; break;
-	case obj_brute: score += 50; break;
+	case obj_brute: 
+		score += 20; 
+		//no break
+	case obj_hunter: 
+		score += 15; 
+		//no break
+	case obj_raider: 
+		score += 15;
+		if(irandom_range(0, 2) == 0) {
+			instance_create_layer(x, y, "Instances", obj_powerup);
+		}
+		break;
+	case obj_mother: 
+		score += 200;
+		instance_create_layer(x, y, "Instances", obj_powerup);
+		break;
 }
 
-if(irandom_range(0, 1) == 0) {
-	instance_create_layer(x, y, "Instances", obj_powerup);
-}

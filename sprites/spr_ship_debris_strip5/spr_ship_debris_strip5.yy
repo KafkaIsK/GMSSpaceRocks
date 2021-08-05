@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Ships",
+    "path": "folders/Sprites/Ships.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ship_debris_strip5",

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Ships",
+    "path": "folders/Sprites/Ships.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_enemy_raider",
